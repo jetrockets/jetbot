@@ -14,5 +14,7 @@
   "hubot-motivate",
   "hubot-thesimpsons",
   "hubot-bonusly",
-  "hubot-codinglove"
+  "hubot-codinglove",
+  "hubot-devops-reactions",
+  "hubot-reaction"
 ]
