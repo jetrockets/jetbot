@@ -9,9 +9,9 @@
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 
 module.exports = (robot) ->
+  igor_motivate = ['https://pp.vk.me/c617422/v617422059/10a25/gsYFnh7F7Ww.jpg', 'https://pp.vk.me/c621129/v621129059/8205/p18uz-mZiOE.jpg', 'https://pp.vk.me/c623924/v623924059/45e4/gpeHepRo68I.jpg', 'https://pp.vk.me/c616816/v616816059/1d3b8/KW0OGmS9ZF0.jpg', 'https://pp.vk.me/c620122/v620122278/aa59/poPCJYYgeV0.jpg', 'https://pp.vk.me/c617421/v617421059/9a13/MC8db4dQzPo.jpg']
   robot.hear /(igor motivate)/, (msg) ->
-    igor_motivate = ['https://pp.vk.me/c617422/v617422059/10a25/gsYFnh7F7Ww.jpg', 'https://pp.vk.me/c621129/v621129059/8205/p18uz-mZiOE.jpg', 'https://pp.vk.me/c623924/v623924059/45e4/gpeHepRo68I.jpg', 'https://pp.vk.me/c616816/v616816059/1d3b8/KW0OGmS9ZF0.jpg', 'https://pp.vk.me/c620122/v620122278/aa59/poPCJYYgeV0.jpg', 'https://pp.vk.me/c617421/v617421059/9a13/MC8db4dQzPo.jpg']
-    msg.send igor_motivate[Math.floor(Math.random()*igor_motivate.length())]
+    msg.send igor_motivate[Math.floor(Math.random()*igor_motivate.length)]
 
   # robot.hear /badger/i, (msg) ->
   #   msg.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
