@@ -9,9 +9,9 @@
 #   These are from the scripting documentation: https://github.com/github/hubot/blob/master/docs/scripting.md
 
 module.exports = (robot) ->
-  igor_motivate = ['https://pp.vk.me/c617422/v617422059/10a25/gsYFnh7F7Ww.jpg', 'https://pp.vk.me/c621129/v621129059/8205/p18uz-mZiOE.jpg', 'https://pp.vk.me/c623924/v623924059/45e4/gpeHepRo68I.jpg', 'https://pp.vk.me/c616816/v616816059/1d3b8/KW0OGmS9ZF0.jpg', 'https://pp.vk.me/c620122/v620122278/aa59/poPCJYYgeV0.jpg', 'https://pp.vk.me/c617421/v617421059/9a13/MC8db4dQzPo.jpg']
-  robot.hear /(igor motivate)/, (msg) ->
-    msg.send msg.random igor_motivate
+  # igor_motivate = ['https://pp.vk.me/c617422/v617422059/10a25/gsYFnh7F7Ww.jpg', 'https://pp.vk.me/c621129/v621129059/8205/p18uz-mZiOE.jpg', 'https://pp.vk.me/c623924/v623924059/45e4/gpeHepRo68I.jpg', 'https://pp.vk.me/c616816/v616816059/1d3b8/KW0OGmS9ZF0.jpg', 'https://pp.vk.me/c620122/v620122278/aa59/poPCJYYgeV0.jpg', 'https://pp.vk.me/c617421/v617421059/9a13/MC8db4dQzPo.jpg']
+  # robot.hear /(igor motivate)/, (msg) ->
+  #   msg.send msg.random igor_motivate
 
   # robot.hear /badger/i, (msg) ->
   #   msg.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
@@ -34,11 +34,10 @@ module.exports = (robot) ->
   # robot.topic (msg) ->
   #   msg.send "#{msg.message.text}? That's a Paddlin'"
   #
-  # enterReplies = ['Hi', 'Target Acquired', 'Firing', 'Hello friend.', 'Gotcha', 'I see you']
+  enterReplies = ['Привет', 'Прив', 'Hi', 'Добро пожаловть в ад', 'Вот я не рад тебя видеть', 'Давай работай']
   # leaveReplies = ['Are you still there?', 'Target lost', 'Searching']
-  #
-  # robot.enter (msg) ->
-  #   msg.send msg.random enterReplies
+  robot.enter (msg) ->
+    msg.send msg.random enterReplies
   # robot.leave (msg) ->
   #   msg.send msg.random leaveReplies
   #
